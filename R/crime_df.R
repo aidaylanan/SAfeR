@@ -21,7 +21,7 @@ if(FALSE) {
   # Tidy the dataset by turning column values into row values
     crime <- gather(crime, Year, Crime_Rate, -Province, -Station, -Category)
   # Fix row values into single years
-    crime$Year <- substr(crime[[4]], 2, 5) %>% as.numeric()
+    crime$Year <- substr(crime$Year, 2, 5) %>% as.numeric()
   # Save data into repository
     devtools::use_data(crime, overwrite = TRUE)
 }
