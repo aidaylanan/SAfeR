@@ -21,7 +21,7 @@ select_category <- function(station) {
 
 #Function - average crime rate in a specific geographic location
 
-average_crime_rate <- function(station) {
+mean_crime <- function(station) {
   cate <- select_category(station) #set cate as the output of select_category
   #sum the crime rates in each year of the chosen station/category combination. Convert to numerical vector to sum.
   mean(as.numeric(crime[which(crime$Station == station & crime$Category == cate), 4:14]))
