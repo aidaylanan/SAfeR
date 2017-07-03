@@ -5,7 +5,7 @@ library(reshape2)
 
 #Private function to create a dataframe of a station's categories
 create_data_frame <- function(x) {
-  y <- data.frame (SACrimeStats[(which(SACrimeStats$Station == x)), 3])   #create data frame
+  y <- data.frame (crime[(which(crime$Station == x)), 3])   #create data frame
   as.vector(y$Category) #converts data frame as vector
 }
 
@@ -29,6 +29,6 @@ select_category <- function(station) {
 trend_line <- function(station) {
   cate <- select_category(station)
   #creates ggplot line, melt function turns wide-form data into long-form to reference the years as x variables and the value as y
-  ggplot(melt(SACrimeStats[which(SACrimeStats$Station == station & SACrimeStats$Category == cate), 4:14]), aes(x=variable, y=value))  + geom_point() + geom_line(group=1)
+  ggplot(melt(crime[which(crime$Station == station & crime$Category == cate), 4:14]), aes(x=variable, y=value))  + geom_point() + geom_line(group=1)
 
 }

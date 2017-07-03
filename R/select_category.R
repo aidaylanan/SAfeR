@@ -5,7 +5,7 @@ library(reshape2)
 
 #Private function to create a dataframe of a station's categories
 create_data_frame <- function(x) {
-  y <- data.frame (SACrimeStats[(which(SACrimeStats$Station == x)), 3])   #create data frame
+  y <- data.frame (crime[(which(crime$Station == x)), 3])   #create data frame
   as.vector(y$Category) #converts data frame as vector
 }
 
