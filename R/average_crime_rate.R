@@ -1,8 +1,6 @@
 library(ggplot2)
 library(reshape2)
 
-crime <- crime
-rm(crime)
 
 #Private function to create a dataframe of a station's categories
 create_data_frame <- function(x) {
@@ -26,7 +24,7 @@ select_category <- function(station) {
 average_crime_rate <- function(station) {
   cate <- select_category(station) #set cate as the output of select_category
   #sum the crime rates in each year of the chosen station/category combination. Convert to numerical vector to sum.
-  sum(as.numeric(crime[which(crime$Station == station & crime$Category == cate), 4:14]))
+  mean(as.numeric(crime[which(crime$Station == station & crime$Category == cate), 4:14]))
 
   #still need to add error checking -- returns NA if cannot be summed, change that to 0, or if they add a non-existant station
 }
