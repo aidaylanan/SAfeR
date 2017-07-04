@@ -11,6 +11,7 @@
 #'   \item{Year}{Year in which Crimes were Committed;}
 #'   \item{Crime_Rate}{Number of Crimes Committed in a Given Year;}
 #' }
+#'
 #' @source
 #' These data were downloaded from Kaggle user Stephan Wessels, retrievable here: https://www.kaggle.com/slwessels/crime-statistics-for-south-africa.
 #' @examples
