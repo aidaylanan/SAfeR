@@ -20,9 +20,8 @@ plotting_crime <- function(year) {
   trythis <- as.vector(trythis)
   crime.appended <- crime
   crime.appended$Main_Category <- trythis
-  ggplot(data = crime.appended, aes(x = Province, y = year, fill = Main_Category)) + geom_bar(width = 1, stat = "identity") +
-    labs(x = "Province", y = "Year", title = "Types of Crime per Province in a Given Year") +
+  ggplot(data = crime.appended, aes(x = Province, y = Crime_Rate, fill = Main_Category)) + geom_bar(width = 1, stat = "identity") +
+    labs(x = "Province", y = "Number of Crimes", title = "Types of Crime per Province in a Given Year") +
     scale_fill_discrete(name = "Types of Crime", labels = c("Alcohol and Drugs", "Assault", "Burglary at Non-Residental Premises", "Burglary at Residental Premises", "Murder", "Other", "Theft"))
 }
-
 
