@@ -8,9 +8,6 @@
 #' @examples
 #' plotting_crime(2005)
 
-library(forcats)
-library(ggplot2)
-library(dplyr)
 
 plotting_crime <- function(year) {
   trythis <- fct_recode(crime$Category, Assault = "Assault with the intent to inflict grievous bodily harm", Assault = "Attempted murder", Assault = "Common assault", Assault = "Sexual Offences", Assault = "Sexual offences as result of police action",Alcohol_and_drugs = "Drug-related crime", Alcohol_and_drugs = "Driving under the influence of alcohol or drugs", Murder = "Murder", Theft = "Stock-theft",

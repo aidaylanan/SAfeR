@@ -1,4 +1,4 @@
-#' Crimes Most Frequently Committed in a Given Station, Year
+#' Title Crimes Most Frequently Committed in a Given Station, Year
 #'
 #' @param station A specified South African Police Station (found in the Station variable in the crime dataset)
 #' @param year A specified year (found in the Year variable in the crime dataset)
@@ -10,9 +10,6 @@
 #' max_crime("Cape Town Central", 2005)
 #' max_crime("Park Road", 2010)
 
-library(dplyr)
-library(ggplot2)
-library(ggthemes)
 
 STATion <- function(station, year) {
   sta <- crime[which(crime[,2] == station), ]

@@ -16,7 +16,6 @@
 #' @examples
 #' mean_crime("Cape Town Central", data = crime)
 
-library(tidyr)
 if(FALSE) {
   # Tidy the dataset by turning column values into row values
     crime <- gather(crime, Year, Crime_Rate, -Province, -Station, -Category)
