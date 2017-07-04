@@ -19,7 +19,6 @@
 library(tidyr)
 if(FALSE) {
   # Tidy the dataset by turning column values into row values
-    crime <- read.csv("~/Downloads/SouthAfricaCrimeStats_v2.csv")
     crime <- gather(crime, Year, Crime_Rate, -Province, -Station, -Category)
   # Fix row values into single years
     crime$Year <- substr(crime$Year, 2, 5) %>% as.numeric()
