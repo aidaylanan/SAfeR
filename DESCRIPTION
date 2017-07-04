@@ -1,12 +1,15 @@
 Package: SAfeR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Stay SAfer in South Africa
 Version: 0.1
 Date: 2017-07-03
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: c(person("Aida","Ylanan",  , "a1daylanan@ucla.edu", person("Jason", "Chong", ,"jasonchongg@gmail.com", person("Paola", "Scaramuzzi", ,"pascar18@gmail.com")))
+Maintainer: Aida Ylanan <a1daylanan@ucla.edu>
+Description: This package offers a deep insight on South African crime rates between 2005
+and 2015. It allows users to obtain information for specific years, geographic areas (provinces
+and stations) and types of crime. On top of this, it allows the user to create useful
+visualizations of the data.
+License: GPL-3
 LazyData: TRUE
-RoxygenNote: 6.0.1.9000
+Imports: dplyr, ggplot2, ggthemes, forcats, tidyr, reshape2
 Suggests: testthat
