@@ -11,7 +11,7 @@
 #' @examples
 #'
 #'mean_crime("Cape Town Central")
-#'mean_crime("Aberdeen")
+#'1
 #'
 #'
   mean_crime <- function(station) {
