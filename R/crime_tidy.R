@@ -1,12 +1,9 @@
-crime_df
-#' Dataset of Crime in South Africa
+crime_tidy
+#' Documentation of Tidying Original Crime Data
 #'
-#' A dataset containing the number of crimes committed, per category of crime, in a given province and police station.
-#' Includes data collected from 2005 to 2015.
+#' The documentation that records the tidying of crime data, as retrieved from Kaggle, in order to fit SAfeR functionality.
 #'
-#' @docType data
 #'
-#' @usage data(crime)
 #'
 #' @format A data frame with 339471 records and 5 variables:
 #' \describe{
@@ -21,4 +18,13 @@ crime_df
 #' These data were downloaded from Kaggle user Stephan Wessels, retrievable here: https://www.kaggle.com/slwessels/crime-statistics-for-south-africa.
 #' @examples
 #' mean_crime("Cape Town Central", data = crime)
-"crime"
+#'
+
+if(FALSE) {
+  # Tidy the dataset by turning column values into row values
+  crime <- gather(crime, Year, Crime_Rate, -Province, -Station, -Category)
+  # Fix row values into single years
+  crime$Year <- substr(crime$Year, 2, 5) %>% as.numeric()
+  # Save data into repository
+  devtools::use_data(crime, overwrite = TRUE)
+}
