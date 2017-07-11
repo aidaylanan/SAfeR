@@ -24,3 +24,15 @@ __SAfeR__ contains a tidy data set of the number of crimes committed in South Af
 *trend_line()* plots the change in crime over the years in a given station and crime category. Category is prompted for after function is run.
 
 *max_crime()* plots the top three crimes reported by a given station during a given year.
+
+## Examples 
+
+Preview of the data set, labeled *crime*:
+```{r, echo = FALSE}
+head(crime)
+```
+
+The types of crimes committed in South Africa in 2010:
+```{r}
+plotting_crime(2010)
+```
