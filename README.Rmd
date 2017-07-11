@@ -29,6 +29,7 @@ __SAfeR__ contains a tidy data set of the number of crimes committed in South Af
 
 Preview of the data set, labeled *crime*:
 ```{r, echo = FALSE}
+library(SAfeR)
 head(crime)
 ```
 
