@@ -1,0 +1,26 @@
+# SAfeR
+
+__SAfeR__ is an R package that contains a record of crime statistics in the country of South Africa along with functions to easily visualize these statistics. 
+
+## Installation 
+
+You can start using SAfeR after installing it from Github:
+```{r}
+devtools::install_github("aidaylanan/SAfeR")
+```
+
+## Contents
+
+### Data
+
+__SAfeR__ contains a tidy data set of the number of crimes committed in South Africa per province from 2005 to 2015.
+
+### Functionality
+
+*mean_crime()* returns the average number of crimes committed of a certain category, as reported by a provided police station. 
+
+*plotting_crime()* plots the types of crimes per province of a given year. 
+
+*trend_line()* plots the change in crime over the years in a given station and crime category. Category is prompted for after function is run.
+
+*max_crime()* plots the top three crimes reported by a given station during a given year.
