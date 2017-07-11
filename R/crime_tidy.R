@@ -1,4 +1,3 @@
-crime_tidy
 #' Documentation of Tidying Original Crime Data
 #'
 #' The documentation that records the tidying of crime data, as retrieved from Kaggle, in order to fit SAfeR functionality.

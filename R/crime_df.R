@@ -1,4 +1,3 @@
-crime_df
 #' Dataset of Crime in South Africa
 #'
 #' A dataset containing the number of crimes committed, per category of crime, in a given province and police station.
