@@ -1,5 +1,5 @@
 
-#' Title Create a trend line of all the crime rates in a specific geographic area
+#' Create a trend line of all the crime rates in a specific geographic area
 #'
 #' @param station A valid station in the crime data frame, string
 #'

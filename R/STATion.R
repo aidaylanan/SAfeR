@@ -1,4 +1,4 @@
-#' Title Crimes Most Frequently Committed in a Given Station, Year
+#' Crimes Most Frequently Committed in a Given Station, Year
 #'
 #' @param station A specified South African Police Station (found in the Station variable in the crime dataset)
 #' @param year A specified year (found in the Year variable in the crime dataset)

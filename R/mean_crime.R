@@ -1,7 +1,7 @@
 
 
 
-#' Title Calculates the mean crime in a specific geographic area
+#' Calculates the mean crime in a specific geographic area
 #'
 #' @param station A valid station in the crime data frame, string
 #'
